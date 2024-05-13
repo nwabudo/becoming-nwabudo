@@ -29,12 +29,12 @@ const PeopleSection = () => {
   return (
     <section className='bg-white relative'>
       <div className='container pt-[6rem] pb-[8rem]'>
-        <h2 className="font-rusilla text-6xl xl:text-[4.063rem] text-primary text-center flex flex-col md:flex-col flex-wrap justify-center items-center  md:gap-5">
+        <h2 className="font-rusilla text-6xl leading-[0.9] xl:text-[4.063rem] text-primary text-center flex flex-col md:flex-row flex-wrap justify-center items-center  md:gap-5">
           <span>team Bride</span> 
-          <span className="text-secondary text-4xl xl:text-[3.063rem] pt-2">x</span> 
+          <span className="text-secondary text-4xl xl:text-[3.063rem] md:pt-2">x</span> 
           <span>team Groom</span>
         </h2>
-        <div className="mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-16">
+        <div className="mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6 md:gap-x-8 gap-y-14 md:gap-y-16">
           {peopleList.map((person) => <Card key={person?.id} data={person} />)}
         </div>
       </div>

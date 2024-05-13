@@ -1,16 +1,20 @@
 import Image from "next/image";
 import NigeriaImage from "../../../../public/images/svg/nigeria.svg";
 import RingImage from "../../../../public/images/webp/ring.webp";
+import Image1 from "../../../../public/images/webp/selfie/image1.webp";
+import Image2 from "../../../../public/images/webp/selfie/image2.webp";
+import Image3 from "../../../../public/images/webp/selfie/image3.webp";
+import Image4 from "../../../../public/images/webp/selfie/image4.webp";
 
 const TopSection = () => {
   return (
     <section className='relative bg-[#FDF2DD]'>
       <div className='container'>
-        <div className='flex justify-center mx-auto w-4/12'>
+        <div className='flex justify-center mx-auto w-7/12 md:w-4/12'>
           <Image src={RingImage} alt="" className="w-fit" />
         </div>
 
-        <div className="-mt-[5.6rem] w-full md:w-6/12 xl:w-5/12 2xl:w-4/12 flex justify-between items-center mx-auto">
+        <div className="-mt-[3.2rem] md:-mt-[4rem] lg:-mt-[4.6rem] xl:-mt-[5.6rem] w-full md:w-7/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12 flex justify-between items-center mx-auto">
           <div className="flex items-center gap-2">
             <p>
               <svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +32,7 @@ const TopSection = () => {
           </div>
         </div>
 
-        <div className="pt-20 pb-6 md:pb-10 xl:pb-16">
+        <div className="pt-16 md:pt-14 lg:pt-16 xl:pt-20 pb-6 md:pb-10 xl:pb-16">
           <h1 className="font-rusilla flex flex-col text-center text-[5rem] leading-[0.7] md:text-[9.25rem] md:leading-[0.8] xl:text-[16.25rem] xl:leading-[0.7] text-primary">
             <span>ChiomA</span>
             <span className="text-2xl md:text-[3rem] xl:text-[4.5rem] text-secondary">x</span>
@@ -40,8 +44,19 @@ const TopSection = () => {
           <p className="text-center text-primary text-lg md:text-2xl xl:text-[1.75rem]">#becomingNwabudo</p>
         </div>
       </div>
-      <div className="">
-
+      <div className="flex flex-row relative after:contents-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[50%] after:bg-primary">
+        <div className="relative z-40">
+          <Image src={Image1} alt="" className="grayscale hover:grayscale-0 transition-all ease-in-out duration-150" />
+        </div>
+        <div className="mt-6 -ml-2 md:-ml-6 relative z-30">
+          <Image src={Image2} alt="" className="grayscale hover:grayscale-0 transition-all ease-in-out duration-150" />
+        </div>
+        <div className="-ml-4 -mt-2 relative z-20">
+          <Image src={Image3} alt="" className="grayscale hover:grayscale-0 transition-all ease-in-out duration-150" />
+        </div>
+        <div className="-ml-8 md:-ml-12 lg:-ml-20 -mt-12 md:-mt-8 relative z-10">
+          <Image src={Image4} alt="" className="grayscale hover:grayscale-0 transition-all ease-in-out duration-150" />
+        </div>
       </div>
     </section>
   )

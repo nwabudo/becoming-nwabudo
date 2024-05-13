@@ -7,7 +7,7 @@ import TopSection from "./topSection"
 
 const Home = () => {
   return (
-    <main className="relative">
+    <main className="relative w-full overflow-x-hidden">
       <TopSection />
       <MiddleSection />
       <PeopleSection />
