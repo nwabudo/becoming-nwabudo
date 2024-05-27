@@ -1,10 +1,13 @@
 import AbrahamImage from "../../../../public/images/webp/people/abraham.webp"
 import AdemolaImage from "../../../../public/images/webp/people/ademola.webp"
 import AnthoniaImage from "../../../../public/images/webp/people/anthonia.webp"
+import BabatundeImage from "../../../../public/images/webp/people/babatunde.webp"
 import ChidibereImage from "../../../../public/images/webp/people/chidebere.webp"
 import DamilolaImage from "../../../../public/images/webp/people/dami.webp"
 import EmmanuelImage from "../../../../public/images/webp/people/ejeh.webp"
 import KelechiImage from "../../../../public/images/webp/people/ejezie.webp"
+import EmmanuellaImage from "../../../../public/images/webp/people/emmanuella.webp"
+import EniolaImage from "../../../../public/images/webp/people/eniola.webp"
 import FaithImage from "../../../../public/images/webp/people/faith.webp"
 import HopeImage from "../../../../public/images/webp/people/hope.webp"
 import IkechukwuImage from "../../../../public/images/webp/people/ikechukwu.webp"
@@ -134,6 +137,27 @@ export const peopleList = [
     image: FaithImage,
     firstName: "Faith",
     lastName: "Obinna",
+    role: ""
+  },
+  {
+    id: 18,
+    image: EmmanuellaImage,
+    firstName: "Emmanuella",
+    lastName: "Ekenechukwu",
+    role: ""
+  },
+  {
+    id: 19,
+    image: BabatundeImage,
+    firstName: "Samuel",
+    lastName: "Babatunde",
+    role: ""
+  },
+  {
+    id: 20,
+    image: EniolaImage,
+    firstName: "Eniola",
+    lastName: "Akinyamoju",
     role: ""
   }
 ]

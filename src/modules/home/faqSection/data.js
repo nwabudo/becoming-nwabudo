@@ -14,7 +14,7 @@ export const faqData = [
   {
     id: 3,
     question: "When is the RSVP deadline?",
-    answer: "Please RSVP by June 15th, so we can have an accurate headcount."
+    answer: "Please RSVP by August 15th, so we can have an accurate headcount."
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const faqData = [
   {
     id: 7,
     question: "Is it okay to take pictures with our phones and cameras during the wedding?",
-    answer: "Yes! We would love for you to take photos and share them on Social Media. Don't forget to use our hashtags though #BecomingNwabudo winks😉"
+    answer: "Yes! We would love you to take photos, upload them to our photo library and share on Social Media. Don't forget to use our hashtags though #BecomingNwabudo winks😉"
   },
   {
     id: 8,
