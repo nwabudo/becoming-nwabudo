@@ -4,6 +4,7 @@ import SendOtherCurrencyModal from "@/components/modals/sendOtherCurrencyModal"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import { Slide } from "react-awesome-reveal"
 import OtherCurrencyImg from "../../../../../public/images/webp/currency.webp"
 import NairaImg from "../../../../../public/images/webp/naira.webp"
 
@@ -55,36 +56,40 @@ const Support = () => {
   return (
     <>
       <div className="mt-8 md:mt-12 lg:mt-16 xl:mt-20">
-        <h4 className="text-center font-rusilla text-white text-[3.25rem] leading-[0.8] md:text-[5.25rem] md:leading-[0.7] xl:text-[6.25rem] xl:leading-[0.7]">
-          support
-          <br />
-          our journey
-        </h4>
+        <Slide delay={0.1} direction="up" triggerOnce>
+          <h4 className="text-center font-rusilla text-white text-[3.25rem] leading-[0.8] md:text-[5.25rem] md:leading-[0.7] xl:text-[6.25rem] xl:leading-[0.7]">
+            support
+            <br />
+            our journey
+          </h4>
+        </Slide>
 
         <div className="mt-14 md:mt-20 mx-auto w-full md:w-11/12 lg:w-10/12 grid grid-cols-1 md:grid-cols-2 gap-5">
-          <button
-            type="button"
-            onClick={handleSelectPaymentOption}
-            className="focus:outline-none"
-          >
-            <PaymentCard
-              image={NairaImg}
-              title={"Send Naira"}
-              handleSelectPaymentOption={() => handleSelectPaymentOption("naira")}
-            />
-          </button>
+          <Slide direction="up" cascade damping={0.1} triggerOnce>
+            <button
+              type="button"
+              onClick={handleSelectPaymentOption}
+              className="focus:outline-none"
+            >
+              <PaymentCard
+                image={NairaImg}
+                title={"Send Naira"}
+                handleSelectPaymentOption={() => handleSelectPaymentOption("naira")}
+              />
+            </button>
 
-          <Link
-            href={"https://withjoy.com/becoming-nwabudo/registry?pid=326f2377-6cf9-4b97-adf1-1e8c705f3a31"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <PaymentCard
-              image={OtherCurrencyImg}
-              title={"Send other currency"}
-              handleSelectPaymentOption={() => handleSelectPaymentOption("others")}
-            />
-          </Link>
+            <Link
+              href={"https://withjoy.com/becoming-nwabudo/registry?pid=326f2377-6cf9-4b97-adf1-1e8c705f3a31"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <PaymentCard
+                image={OtherCurrencyImg}
+                title={"Send other currency"}
+                handleSelectPaymentOption={() => handleSelectPaymentOption("others")}
+              />
+            </Link>
+          </Slide>
         </div>
       </div>
 
