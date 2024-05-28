@@ -17,7 +17,7 @@ const Upload = () => {
   }
 
   return (
-    <main className="relative w-full overflow-x-hidden min-h-full h-screen">
+    <main className="relative w-full overflow-x-hidden min-h-full h-screen bg-[#FDF2DD]">
       <section className='relative bg-[#FDF2DD] h-full w-full flex flex-col justify-between'>
         <div className='container'>
           <div className="pt-16 md:pt-14 lg:pt-16 xl:pt-20 pb-6">

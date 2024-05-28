@@ -69,7 +69,7 @@ const Support = () => {
             <button
               type="button"
               onClick={handleSelectPaymentOption}
-              className="focus:outline-none"
+              className="focus:outline-none w-full"
             >
               <PaymentCard
                 image={NairaImg}
