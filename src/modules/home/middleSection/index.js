@@ -68,7 +68,7 @@ const MiddleSection = () => {
           <div className="relative pt-24 pb-40">
             <Slide delay={0.1} direction="up" triggerOnce className="relative z-10">
               <Link
-                href="https://withjoy.com/becoming-nwabudo/welcome"
+                href="https://withjoy.com/becoming-nwabudo/rsvp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative z-10 bg-secondary flex items-center 

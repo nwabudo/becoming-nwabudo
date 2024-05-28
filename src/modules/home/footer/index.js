@@ -59,7 +59,7 @@ const Footer = () => {
           <div className="relative pt-8 w-fit font-sans">
             <Slide delay={0.1} direction="up" triggerOnce>
               <Link
-                href="https://withjoy.com/becoming-nwabudo/welcome"
+                href="https://withjoy.com/becoming-nwabudo/rsvp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative z-10 bg-secondary flex items-center 
