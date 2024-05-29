@@ -19,6 +19,7 @@ const TopSection = () => {
 
         </div>
 
+        {/* Desktop Only */}
         <div className="hidden md:flex -mt-[3.2rem] md:-mt-[4rem] lg:-mt-[4.6rem] xl:-mt-[5.6rem] w-full md:w-7/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12 justify-between items-center mx-auto">
           <div className="flex items-center gap-2">
             <Slide delay={0.1} direction="up" cascade damping={0.1} triggerOnce>
@@ -41,7 +42,14 @@ const TopSection = () => {
           </div>
         </div>
 
-        <div className="pt-10 md:pt-14 lg:pt-16 xl:pt-20 pb-6 md:pb-10 xl:pb-16">
+        {/* Mobile Only */}
+        <div className="mt-2 block md:hidden mx-auto">
+          <Slide delay={0.1} direction="up" triggerOnce>
+            <p className="text-center text-primary text-lg md:text-2xl xl:text-[1.75rem]">#becomingNwabudo</p>
+          </Slide>
+        </div>
+
+        <div className="pt-8 md:pt-14 lg:pt-16 xl:pt-20 pb-6 md:pb-10 xl:pb-16">
           <h1 className="font-rusilla flex flex-col text-center text-[5rem] leading-[0.7] md:text-[9.25rem] md:leading-[0.8] xl:text-[16.25rem] xl:leading-[0.7] text-primary">
             <span>
               <Slide delay={0.1} direction="up" cascade damping={0.1} triggerOnce className="inline-block">
@@ -115,7 +123,7 @@ const TopSection = () => {
           <div className="-ml-4 -mt-2 relative z-20">
             <Image src={Image3} alt="" className="grayscale hover:grayscale-0 transition-all ease-in-out duration-150" />
           </div>
-          <div className="-ml-8 md:-ml-12 lg:-ml-20 -mt-12 md:-mt-8 relative z-10">
+          <div className="-ml-8 md:-ml-12 lg:-ml-20 -mt-6 md:-mt-8 relative z-10">
             <Image src={Image4} alt="" className="grayscale hover:grayscale-0 transition-all ease-in-out duration-150" />
           </div>
         </Slide>

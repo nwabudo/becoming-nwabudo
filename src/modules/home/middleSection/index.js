@@ -126,7 +126,7 @@ const MiddleSection = () => {
                 <div className="">
                   <Image src={Abstract2Img} alt="" />
                 </div>
-                <div className="pt-4 pb-3 text-white text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold">
+                <div className="pt-4 pb-3 text-white text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-center mx-auto">
                   <p>From a “Mysterious” message to Forever</p>
                 </div>
                 <div className="">
