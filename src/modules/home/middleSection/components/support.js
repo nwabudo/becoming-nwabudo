@@ -1,6 +1,5 @@
 "use client"
 import SendNairaModal from "@/components/modals/sendNairaModal"
-import SendOtherCurrencyModal from "@/components/modals/sendOtherCurrencyModal"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
@@ -38,19 +37,13 @@ const PaymentCard = ({ title, image }) => {
 
 const Support = () => {
   const [showNairaModal, setShowNairaModal] = useState(false)
-  const [showOtherCurrencyModal, setShowOtherCurrencyModal] = useState(false)
 
   const handleSelectPaymentOption = (val) => {
-    if (val === "naira") {
-      setShowNairaModal(true)
-    } else {
-      setShowOtherCurrencyModal(true)
-    }
+    setShowNairaModal(true)
   }
 
   const handleClose = () => {
     setShowNairaModal(false)
-    setShowOtherCurrencyModal(false)
   }
 
   return (
@@ -74,7 +67,7 @@ const Support = () => {
               <PaymentCard
                 image={NairaImg}
                 title={"Send Naira"}
-                handleSelectPaymentOption={() => handleSelectPaymentOption("naira")}
+                handleSelectPaymentOption={handleSelectPaymentOption}
               />
             </button>
 
@@ -86,7 +79,6 @@ const Support = () => {
               <PaymentCard
                 image={OtherCurrencyImg}
                 title={"Send other currency"}
-                handleSelectPaymentOption={() => handleSelectPaymentOption("others")}
               />
             </Link>
           </Slide>
@@ -95,11 +87,6 @@ const Support = () => {
 
       <SendNairaModal
         open={showNairaModal}
-        handleClose={handleClose}
-      />
-
-      <SendOtherCurrencyModal
-        open={showOtherCurrencyModal}
         handleClose={handleClose}
       />
     </>

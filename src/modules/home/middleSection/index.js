@@ -10,7 +10,6 @@ import GroupImg from "../../../../public/images/webp/group_image.webp"
 import RoseFlowerImg from "../../../../public/images/webp/rose_flower.webp"
 import Support from "./components/support"
 
-
 const Card = ({ icon, title, content }) => {
   return <div className="flex flex-col items-center text-center">
     <div className="">
@@ -26,8 +25,6 @@ const Card = ({ icon, title, content }) => {
     </div>
   </div>
 }
-
-
 
 const MiddleSection = () => {
   return (
