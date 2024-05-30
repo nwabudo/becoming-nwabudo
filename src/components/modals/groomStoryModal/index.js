@@ -51,7 +51,7 @@ const GroomStoryModal = ({
                   </div>
                 </div>
                 <div className="bg-primary  pb-16 px-4 md:px-6 xl:px-10">
-                  <div className="text-center text-white text-sm-15 md:text-base lg:text-lg xl:text-xl">
+                  <div className=" text-white text-sm-15 md:text-base lg:text-lg xl:text-xl">
                     <span>
                       One cool evening, I was minding my own business, probably indulging in one too
                       many glasses of whiskey, when my friend Chinelo, who happened to be in the same
