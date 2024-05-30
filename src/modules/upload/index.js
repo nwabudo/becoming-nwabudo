@@ -1,6 +1,7 @@
 "use client"
 import UploadModal from "@/components/modals/uploadModal"
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 import { Slide } from "react-awesome-reveal"
 import RingImage from "../../../public/images/webp/ring-upload.webp"
@@ -21,13 +22,16 @@ const Upload = () => {
       <section className='relative bg-[#FDF2DD] h-full w-full flex flex-col justify-between'>
         <div className='container'>
           <div className="pt-16 md:pt-14 lg:pt-16 xl:pt-20 pb-6">
-            <h1 className="font-rusilla flex flex-row items-center justify-center gap-2 md:gap-4 text-center text-[1.4rem] leading-[0.7] md:text-[2rem] md:leading-[0.8] lg:text-[2.8rem] lg:leading-[0.8] xl:text-[3.15rem] xl:leading-[0.7] text-primary">
-              <Slide delay={0.1} direction="up" cascade damping={0.1} triggerOnce>
-                <span>ChiomA</span>
-                <span className="text-xl md:text-[.8rem] xl:text-[1.5rem] text-secondary">x</span>
-                <span>OnyEkachI</span>
-              </Slide>
-            </h1>
+            <Link href={"https://nwabudo-wedding.vercel.app/"}>
+              <h1 className="font-rusilla flex flex-row items-center justify-center gap-2 md:gap-4 text-center text-[1.4rem] leading-[0.7] md:text-[2rem] md:leading-[0.8] lg:text-[2.8rem] lg:leading-[0.8] xl:text-[3.15rem] xl:leading-[0.7] text-primary">
+                <Slide delay={0.1} direction="up" cascade damping={0.1} triggerOnce>
+                  <span>ChiomA</span>
+                  <span className="text-xl md:text-[.8rem] xl:text-[1.5rem] text-secondary">x</span>
+                  <span>OnyEkachI</span>
+                </Slide>
+              </h1>
+            </Link>
+
             <div className="mt-10 font-rusilla flex flex-col text-center text-[3.3rem] leading-[0.9] md:text-[3.9rem] md:leading-[0.9] xl:text-[6.25rem] xl:leading-[0.9] text-primary">
               <Slide delay={0.1} direction="up" cascade damping={0.1} triggerOnce>
                 <span>

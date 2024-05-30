@@ -38,7 +38,16 @@ export const faqData = [
   {
     id: 7,
     question: "Is it okay to take pictures with our phones and cameras during the wedding?",
-    answer: "Yes! We would love you to take photos, upload them to our photo library and share on Social Media. Don't forget to use our hashtags though #BecomingNwabudo winks😉"
+    answer: <>
+      Yes! We would love you to take photos, upload them to our{" "}
+      <span className="text-primary underline underline-offset-4">
+        <Link href="/upload">photo library</Link>
+      </span>{" "}
+      and
+      share on Social Media.
+      Don&apos;t forget to use our hashtags though
+      #BecomingNwabudo winks😉
+    </>
   },
   {
     id: 8,
@@ -51,10 +60,10 @@ export const faqData = [
     answer: <>
       <span>Yes. Visit our cash registry</span>
       <span className="pl-2 text-primary underline underline-offset-4">
-        <Link 
-        href="https://withjoy.com/becoming-nwabudo/registry" 
-        target="_blank" 
-        rel="noopener noreferrer">here.</Link>
+        <Link
+          href="https://withjoy.com/becoming-nwabudo/registry"
+          target="_blank"
+          rel="noopener noreferrer">here.</Link>
       </span>
     </>
   },

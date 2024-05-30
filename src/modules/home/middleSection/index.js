@@ -8,6 +8,7 @@ import Abstract3Img from "../../../../public/images/svg/abstract3.svg"
 import RingImg from "../../../../public/images/svg/ring.svg"
 import GroupImg from "../../../../public/images/webp/group_image.webp"
 import RoseFlowerImg from "../../../../public/images/webp/rose_flower.webp"
+import GroomStory from "./components/groomStory"
 import Support from "./components/support"
 
 const Card = ({ icon, title, content }) => {
@@ -172,6 +173,8 @@ const MiddleSection = () => {
                   - Chioma
                 </p>
               </div>
+
+              <GroomStory />
             </div>
 
             <div className="mt-20 mx-auto flex justify-center w-7/12 md:w-5/12 lg:w-6/12 xl:w-fit">
