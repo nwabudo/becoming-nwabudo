@@ -45,7 +45,7 @@ const TopSection = () => {
         {/* Mobile Only */}
         <div className="mt-2 block md:hidden mx-auto">
           <Slide delay={0.1} direction="up" triggerOnce>
-            <p className="text-center text-primary text-lg md:text-2xl xl:text-[1.75rem]">#becomingNwabudo</p>
+            <p className="text-center text-primary text-lg md:text-2xl xl:text-[1.75rem]">#BecomingNwabudo</p>
           </Slide>
         </div>
 
@@ -85,7 +85,7 @@ const TopSection = () => {
         {/* Desktop only */}
         <div className="pb-24 hidden md:block">
           <Slide delay={0.1} direction="up" triggerOnce>
-            <p className="text-center text-primary text-lg md:text-2xl xl:text-[1.75rem]">#becomingNwabudo</p>
+            <p className="text-center text-primary text-lg md:text-2xl xl:text-[1.75rem]">#BecomingNwabudo</p>
           </Slide>
         </div>
 

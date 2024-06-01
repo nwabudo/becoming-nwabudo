@@ -51,11 +51,6 @@ export const faqData = [
   },
   {
     id: 8,
-    question: "What time will the reception end?",
-    answer: "The reception will end at 5pm"
-  },
-  {
-    id: 9,
     question: "Is there a gift registry?",
     answer: <>
       <span>Yes. Visit our cash registry</span>
