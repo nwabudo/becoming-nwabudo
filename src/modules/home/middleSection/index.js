@@ -58,7 +58,7 @@ const MiddleSection = () => {
               content={<>
                 Saturday, November 16,
                 <br />
-                2024. 1:00 PM8
+                2024. 1:00 PM
               </>}
             />
           </div>
