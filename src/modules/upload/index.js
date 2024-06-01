@@ -22,7 +22,7 @@ const Upload = () => {
       <section className='relative bg-[#FDF2DD] h-full w-full flex flex-col justify-between'>
         <div className='container'>
           <div className="pt-16 md:pt-14 lg:pt-16 xl:pt-20 pb-6">
-            <Link href={"https://nwabudo-wedding.vercel.app/"}>
+            <Link href={"/"}>
               <h1 className="font-rusilla flex flex-row items-center justify-center gap-2 md:gap-4 text-center text-[1.4rem] leading-[0.7] md:text-[2rem] md:leading-[0.8] lg:text-[2.8rem] lg:leading-[0.8] xl:text-[3.15rem] xl:leading-[0.7] text-primary">
                 <Slide delay={0.1} direction="up" cascade damping={0.1} triggerOnce>
                   <span>ChiomA</span>
