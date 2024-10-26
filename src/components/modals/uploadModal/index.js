@@ -49,12 +49,12 @@ const UploadModal = ({ open, handleClose }) => {
                   </div>
 
                   <div className="mt-8 pb-8">
-                    <iframe
-                      src="https://driveuploader.com/upload/0g2ErdMyai/"
-                      width={"100%"}
-                      height={520}
-                      name="Upload frame"
-                    ></iframe>
+                  <iframe 
+                    name="Upload frame"
+                    src="https://driveuploader.com/upload/YhdBvims2n/embed/" 
+                    width={"100%"}
+                    height={520}
+                  ></iframe>
                   </div>
                 </div>
               </Dialog.Panel>

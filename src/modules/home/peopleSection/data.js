@@ -1,5 +1,5 @@
 import AbrahamImage from "../../../../public/images/webp/people/abraham.webp"
-import AdemolaImage from "../../../../public/images/webp/people/ademola.webp"
+import IjezieImage from "../../../../public/images/webp/people/ijezie.webp"
 import AnthoniaImage from "../../../../public/images/webp/people/anthonia.webp"
 import BabatundeImage from "../../../../public/images/webp/people/babatunde.webp"
 import ChidibereImage from "../../../../public/images/webp/people/chidebere.webp"
@@ -8,10 +8,10 @@ import EmmanuelImage from "../../../../public/images/webp/people/ejeh.webp"
 import KelechiImage from "../../../../public/images/webp/people/ejezie.webp"
 import EmmanuellaImage from "../../../../public/images/webp/people/emmanuella.webp"
 import EniolaImage from "../../../../public/images/webp/people/eniola.webp"
-import FaithImage from "../../../../public/images/webp/people/faith.webp"
+import EstherImage from "../../../../public/images/webp/people/esther.webp"
 import HopeImage from "../../../../public/images/webp/people/hope.webp"
 import IkechukwuImage from "../../../../public/images/webp/people/ikechukwu.webp"
-import JenniferImage from "../../../../public/images/webp/people/jennifer.webp"
+import FavourImage from "../../../../public/images/webp/people/favour.webp"
 import JohnImage from "../../../../public/images/webp/people/john.webp"
 import MarthaImage from "../../../../public/images/webp/people/martha.webp"
 import PelumiImage from "../../../../public/images/webp/people/pelumi.webp"
@@ -23,7 +23,7 @@ export const peopleList = [
   {
     id: 1,
     image: AbrahamImage,
-    firstName: "Abraham",
+    firstName: "Abraham Okwuchukwu",
     lastName: "Nwabudo",
     role: "Bestman"
   },
@@ -36,9 +36,9 @@ export const peopleList = [
   },
   {
     id: 3,
-    image: UgochukwuImage,
-    firstName: "Ezemegbu",
-    lastName: "Ugochukwu",
+    image: IkechukwuImage,
+    firstName: "Ikechukwu Ernest",
+    lastName: "Onah",
     role: ""
   },
   {
@@ -50,9 +50,9 @@ export const peopleList = [
   },
   {
     id: 5,
-    image: IkechukwuImage,
-    firstName: "Ikechukwu",
-    lastName: "Onah",
+    image: UgochukwuImage,
+    firstName: "Ezemegbu",
+    lastName: "Ugochukwu",
     role: ""
   },
   {
@@ -64,9 +64,9 @@ export const peopleList = [
   },
   {
     id: 7,
-    image: AdemolaImage,
-    firstName: "Ademola",
-    lastName: "Adekanbi",
+    image: IjezieImage,
+    firstName: "Chukwuemeka",
+    lastName: "Ijezie",
     role: ""
   },
   {
@@ -79,7 +79,7 @@ export const peopleList = [
   {
     id: 9,
     image: ChidibereImage,
-    firstName: "Chidibere",
+    firstName: "Chidibere Emmanuel",
     lastName: "Onuoha",
     role: ""
   },
@@ -93,50 +93,50 @@ export const peopleList = [
   {
     id: 11,
     image: TimothyImage,
-    firstName: "Engr. Agida",
-    lastName: "Timothy",
+    firstName: "Engr. Timothy",
+    lastName: "Agida",
     role: ""
   },
   {
     id: 12,
-    image: JohnImage,
-    firstName: "John",
-    lastName: "Odey",
-    role: ""
-  },
-  {
-    id: 13,
     image: RachaelImage,
     firstName: "Rachael",
     lastName: "Nwawubem",
     role: ""
   },
   {
-    id: 14,
+    id: 13,
     image: DamilolaImage,
-    firstName: "Damilola",
+    firstName: "Damilola Alfeez",
     lastName: "Sikiru",
     role: ""
   },
   {
-    id: 15,
-    image: JenniferImage,
-    firstName: "Jennifer",
-    lastName: "Ikenma",
+    id: 14,
+    image: FavourImage,
+    firstName: "Favour Chinecherem",
+    lastName: "Obi",
     role: ""
   },
   {
-    id: 16,
+    id: 15,
     image: EmmanuelImage,
-    firstName: "Emmanuel",
+    firstName: "Emmanuel Oche",
     lastName: "Ejeh",
     role: ""
   },
   {
+    id: 16,
+    image: EstherImage,
+    firstName: "Esther",
+    lastName: "Edom",
+    role: ""
+  },
+  {
     id: 17,
-    image: FaithImage,
-    firstName: "Faith",
-    lastName: "Obinna",
+    image: JohnImage,
+    firstName: "John",
+    lastName: "Odey",
     role: ""
   },
   {

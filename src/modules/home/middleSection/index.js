@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import Link from "next/link"
+import { useState, useEffect } from "react"
 import { JackInTheBox, Slide, Zoom } from "react-awesome-reveal"
 import AbstractImg from "../../../../public/images/svg/abstract1.svg"
 import Abstract2Img from "../../../../public/images/svg/abstract2.svg"
@@ -8,7 +8,6 @@ import Abstract3Img from "../../../../public/images/svg/abstract3.svg"
 import RingImg from "../../../../public/images/svg/ring.svg"
 import GroupImg from "../../../../public/images/webp/group_image.webp"
 import RoseFlowerImg from "../../../../public/images/webp/rose_flower.webp"
-import GroomStory from "./components/groomStory"
 import Support from "./components/support"
 
 const Card = ({ icon, title, content }) => {
@@ -28,6 +27,30 @@ const Card = ({ icon, title, content }) => {
 }
 
 const MiddleSection = () => {
+
+  const cutOffDate = new Date('2024-11-03T00:00:00Z'); 
+  const [isAfterCutOffDate, setIsAfterCutOffDate] = useState(false)
+  const [cutOffText, setCutOffText] = useState(false)
+
+  useEffect(() => {
+    const currentDate = new Date();
+    const result = currentDate > cutOffDate;
+    setIsAfterCutOffDate(result);
+    if (result){
+      setCutOffText("SEE SCHEDULE")
+    } else {
+      setCutOffText("RSVP HERE")
+    }
+  }, [cutOffDate])
+
+  const handleButtonAction = () => {
+    if(isAfterCutOffDate) {
+      window.open("https://withjoy.com/becoming-nwabudo/schedule", "_blank");
+    } else {
+      window.open("https://withjoy.com/becoming-nwabudo/rsvp", "_blank");
+    }
+  }
+
   return (
     <section className='bg-primary relative -mt-1'>
       <div className='container pt-[6rem] pb-[8rem]'>
@@ -50,6 +73,12 @@ const MiddleSection = () => {
                 Saturday, November 16,
                 <br />
                 2024. 10:00 AM
+                <br />
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=St+Gerald+Catholic+Church%2C+Adekunle+Osomo+Street%2C+Lagos%2C+Nigeria" 
+                  target="_blank">
+                    St Gerald Catholic Church
+                </a>
               </>}
             />
             <Card
@@ -59,21 +88,24 @@ const MiddleSection = () => {
                 Saturday, November 16,
                 <br />
                 2024. 1:00 PM
+                <br />
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Hadassah+Events+Place%2C+21+Emmanuel+High+Street%2C+Ojota%2C+Lagos%2C+Nigeria" 
+                  target="_blank">
+                    Hadassah Events Place
+                </a>
               </>}
             />
           </div>
 
           <div className="relative pt-24 pb-40">
             <Slide delay={0.1} direction="up" triggerOnce className="relative z-10">
-              <Link
-                href="https://withjoy.com/becoming-nwabudo/rsvp"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button onClick={ handleButtonAction }
                 className="relative z-10 bg-secondary flex items-center 
             gap-3 rounded-full py-6 xl:py-7 px-8 text-lg lg:text-xl xl:text-2xl text-white 
             hover:bg-white hover:shadow-[0px_4px_30px_0px_rgba(0,0,0,0.1)] hover:text-primary transition-all ease-in-out duration-200 group"
               >
-                <span>RSVP HERE</span>
+                <span>{cutOffText}</span>
                 <span className="group-hover:translate-x-1 transition-all ease-in-out duration-200">
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_18_141)">
@@ -86,7 +118,7 @@ const MiddleSection = () => {
                     </defs>
                   </svg>
                 </span>
-              </Link>
+              </button>
             </Slide>
 
             <div className="absolute -top-4 md:-top-8 lg:-top-4 xl:-top-2 -left-28 md:-left-36 lg:-left-32">
@@ -161,10 +193,9 @@ const MiddleSection = () => {
                 </span>
                 <br /> <br />
                 <span>
-                  Reflecting on it all, I can&apos;t help but feel thankful for the twists of
-                  fate and the friends who nudged us together, especially Aunty Chinelo.
-                  With Emmanuel by my side, I embrace the future with open arms, ready
-                  for whatever adventures come our way.
+                  I&apos;m incredibly grateful for the unexpected turn of events that brought Emmanuel into my life, 
+                  and the friends who nudged us together, especially Aunty Chinelo.
+                  I&apos;m excited to embark on this new journey with him, and I can&apos;t wait to see what the future holds.
                 </span>
               </div>
 
@@ -174,7 +205,7 @@ const MiddleSection = () => {
                 </p>
               </div>
 
-              <GroomStory />
+              {/* <GroomStory /> */}
             </div>
 
             <div className="mt-20 mx-auto flex justify-center w-7/12 md:w-5/12 lg:w-6/12 xl:w-fit">
