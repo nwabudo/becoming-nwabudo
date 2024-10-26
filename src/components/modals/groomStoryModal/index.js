@@ -52,6 +52,7 @@ const GroomStoryModal = ({
                 </div>
                 <div className="bg-primary  pb-16 px-4 md:px-6 xl:px-10">
                   <div className=" text-white text-sm-15 md:text-base lg:text-lg xl:text-xl">
+                    <p className="text-white font-bold text-2xl mb-3">An Unexpected Love Story</p>
                     <span>
                       One cool evening, I was minding my own business, probably indulging in one too
                       many glasses of whiskey, when my friend Chinelo, who happened to be in the same

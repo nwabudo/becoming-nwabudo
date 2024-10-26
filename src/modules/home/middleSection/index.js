@@ -8,6 +8,7 @@ import Abstract3Img from "../../../../public/images/svg/abstract3.svg"
 import RingImg from "../../../../public/images/svg/ring.svg"
 import GroupImg from "../../../../public/images/webp/group_image.webp"
 import RoseFlowerImg from "../../../../public/images/webp/rose_flower.webp"
+import GroomStory from "./components/groomStory"
 import Support from "./components/support"
 
 const Card = ({ icon, title, content }) => {
@@ -28,7 +29,7 @@ const Card = ({ icon, title, content }) => {
 
 const MiddleSection = () => {
 
-  const cutOffDate = new Date('2024-11-03T00:00:00Z'); 
+  const cutOffDate = new Date('2024-11-01T00:00:00Z'); 
   const [isAfterCutOffDate, setIsAfterCutOffDate] = useState(false)
   const [cutOffText, setCutOffText] = useState(false)
 

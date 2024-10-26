@@ -4,11 +4,12 @@ import { Fragment, useRef } from "react";
 import NairaImg from "../../../../public/images/webp/send_naira.webp";
 import BankLogoImage from "../../../../public/images/webp/wema.webp";
 
-const AccountCard = ({ name, value }) => {
-  return <div className="text-lg md:text-xl lg:text-xl xl:text-2xl flex justify-between text-white">
-    <p>{name}</p>
-    <p className="font-bold text-right">{value}</p>
-  </div>
+const AccountEntry = ({ name, accountNumber, bank }) => {
+  return <tr>
+    <td className="font-bold text-left">{accountNumber}</td>
+    <td>{bank}</td>
+    <td>{name}</td>
+  </tr>
 }
 
 const SendOtherCurrencyModal = ({
@@ -60,7 +61,6 @@ const SendOtherCurrencyModal = ({
                     </button>
                   </div>
 
-
                   <div className="w-full h-full absolute top-0 left-0">
                     <Image src={NairaImg} className="w-full h-full object-cover" alt="" />
                   </div>
@@ -69,19 +69,33 @@ const SendOtherCurrencyModal = ({
                   <Image src={BankLogoImage} className="" alt="" />
                 </div>
                 <div className="bg-primary pb-16 px-[2rem] md:px-[4rem]">
-                  <div className="w-full md:w-11/12 mx-auto flex flex-col space-y-2">
-                    <AccountCard
-                      name={"Account Number:"}
-                      value={"0237408235"}
-                    />
-                    <AccountCard
-                      name={"Bank:"}
-                      value={"Wema Bank"}
-                    />
-                    <AccountCard
-                      name={"Account Name:"}
-                      value={"Chioma Ozoigbo"}
-                    />
+                <div className="w-full text-white">
+                    <table className="w-full">
+                      <thead>
+                        <tr>
+                          <th>Account Number</th>
+                          <th>Bank</th>
+                          <th>Account Name</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <AccountEntry
+                          accountNumber={"0237408235"}
+                          bank={"Wema Bank"}
+                          name={"Chioma Ozoigbo"}
+                        />
+                        <AccountEntry
+                          accountNumber={"8139684470"}
+                          bank={"Opay"}
+                          name={"Chioma Ozoigbo"}
+                        />
+                        <AccountEntry
+                          accountNumber={"8104728022"}
+                          bank={"Opay"}
+                          name={"Emmanuel Nwabudo"}
+                        />
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </Dialog.Panel>
