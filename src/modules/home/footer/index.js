@@ -59,14 +59,13 @@ const Footer = () => {
           <div className="relative pt-8 w-fit font-sans">
             <Slide delay={0.1} direction="up" triggerOnce>
               <Link
-                href="https://withjoy.com/becoming-nwabudo/rsvp"
-                target="_blank"
+                href="/upload"
                 rel="noopener noreferrer"
                 className="relative z-10 bg-secondary flex items-center 
               gap-3 rounded-full py-6 xl:py-7 px-8 text-lg lg:text-xl xl:text-2xl text-white 
               hover:bg-white hover:shadow-[0px_4px_30px_0px_rgba(0,0,0,0.1)] hover:text-primary transition-all ease-in-out duration-200 group"
               >
-                <span>RSVP HERE</span>
+                <span>SEE GALLERY</span>
                 <span className="group-hover:translate-x-1 transition-all ease-in-out duration-200">
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_18_141)">

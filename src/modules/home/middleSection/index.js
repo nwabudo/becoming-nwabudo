@@ -29,7 +29,7 @@ const Card = ({ icon, title, content }) => {
 
 const MiddleSection = () => {
 
-  const cutOffDate = new Date('2024-11-01T00:00:00Z'); 
+  const cutOffDate = new Date('2024-10-28T00:00:00Z'); 
   const [isAfterCutOffDate, setIsAfterCutOffDate] = useState(false)
   const [cutOffText, setCutOffText] = useState(false)
 
@@ -38,7 +38,7 @@ const MiddleSection = () => {
     const result = currentDate > cutOffDate;
     setIsAfterCutOffDate(result);
     if (result){
-      setCutOffText("SEE SCHEDULE")
+      setCutOffText("SEE GALLERY")
     } else {
       setCutOffText("RSVP HERE")
     }
@@ -46,9 +46,9 @@ const MiddleSection = () => {
 
   const handleButtonAction = () => {
     if(isAfterCutOffDate) {
-      window.open("https://withjoy.com/becoming-nwabudo/schedule", "_blank");
+      window.open("/upload", "_self");
     } else {
-      window.open("https://withjoy.com/becoming-nwabudo/rsvp", "_blank");
+      window.open("https://withjoy.com/becoming-nwabudo/rsvp");
     }
   }
 
