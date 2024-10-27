@@ -9,12 +9,12 @@ export const faqData = [
   {
     id: 2,
     question: "Is the wedding strictly by invitation?",
-    answer: "Yes, the wedding ceremony is strictly by invitation. An access card will be sent to you after your RSVP."
+    answer: "Yes, the wedding Mass is free for all. However, the reception is strictly by Invitation and an access card will be sent to you after your RSVP is confirmed."
   },
   {
     id: 3,
     question: "When is the RSVP deadline?",
-    answer: "Please RSVP by August 15th, so we can have an accurate headcount."
+    answer: "Please RSVP by October 27th, 2024 so we can have an accurate headcount."
   },
   {
     id: 4,
@@ -67,4 +67,9 @@ export const faqData = [
     question: "What is the color(s) of the day?",
     answer: "Wine, lilac and gold"
   },
+  {
+    id: 11,
+    question: "Whom should I call with questions?",
+    answer: "Please call our lovely event planner Florence on +2347060485729 or Innocent on +2348163667678."
+  }
 ]
