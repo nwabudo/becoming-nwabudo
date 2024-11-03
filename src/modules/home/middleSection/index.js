@@ -29,7 +29,7 @@ const Card = ({ icon, title, content }) => {
 
 const MiddleSection = () => {
 
-  const cutOffDate = new Date('2024-11-05T00:00:00Z'); 
+  const cutOffDate = new Date('2024-11-03T00:00:00Z'); 
   const [isAfterCutOffDate, setIsAfterCutOffDate] = useState(false)
   const [cutOffText, setCutOffText] = useState(false)
 
